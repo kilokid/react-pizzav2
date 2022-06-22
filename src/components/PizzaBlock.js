@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function PizzaBlock({ src, title, price, sizes, types }) {
+function PizzaBlock({ imageUrl, title, price, sizes, types }) {
   const [pizzaCount, setPizzaCount] = useState(0);
   const [activeType, setActiveType] = useState(0);
   const [activeSize, setActiveSize] = useState(0);
@@ -13,7 +13,7 @@ function PizzaBlock({ src, title, price, sizes, types }) {
 
   return (
     <div className="pizza-block">
-      <img className="pizza-block__image" src={src} alt="Pizza" />
+      <img className="pizza-block__image" src={imageUrl} alt="Pizza" />
       <h4 className="pizza-block__title">{title}</h4>
       <div className="pizza-block__selector">
         <ul>
