@@ -4,14 +4,25 @@
   border-bottom: 1px solid $gray-line;
   padding: 40px 0;
 
+  
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 660px)
+    {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__logo {
     display: flex;
+
+    @media (max-width: 660px) {
+      margin-bottom: 30px;
+    }
 
     img {
       margin-right: 15px;
