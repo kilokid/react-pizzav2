@@ -1,0 +1,28 @@
+.root {
+    position: relative;
+    left: -120px;
+}
+
+.search {
+    padding: 12px 20px;
+    padding-left: 42px;
+    outline: none;
+    width: 300px;
+    border-right: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+
+    &:focus,
+    &:hover {
+        border: 1px solid rgba(0, 0, 0, 0.3);  
+    }
+}
+
+.icon {
+    width: 22px;
+    height: 22px;
+    opacity: 0.3;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+}
