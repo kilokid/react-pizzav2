@@ -4,7 +4,7 @@
 }
 
 .search {
-    padding: 12px 20px;
+    padding: 12px 45px;
     padding-left: 42px;
     outline: none;
     width: 300px;
@@ -12,8 +12,7 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     font-size: 16px;
 
-    &:focus,
-    &:hover {
+    &:focus {
         border: 1px solid rgba(0, 0, 0, 0.3);  
     }
 }
@@ -25,4 +24,19 @@
     position: absolute;
     left: 12px;
     top: 12px;
+}
+
+.close {
+    stroke: black;
+    width: 25px;
+    height: 25px;
+    opacity: 0.3;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 1;
+    }
 }
